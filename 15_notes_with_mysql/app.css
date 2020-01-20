@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+}
+
+.new-note{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.new-note input,
+.new-note textarea,
+.new-note button{
+    font-family: Arial;
+    padding: 5px 10px;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.notes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.note {
+    background-color: #ffda00;
+    color: black;
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    min-height: 100px;
+}
+.note .title{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.note .title a {
+    color: black;
+}
+.note .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+}
+.note small {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+    font-style: italic;
+}
