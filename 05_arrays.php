@@ -1,77 +1,132 @@
 <?php
 
+// Create array
+$fruits = ["Banana", "Apple", "Orange"];
+
+// Print the whole array
+echo '<pre>';
+var_dump($fruits); // print_r
+echo '</pre>';
+
+// Get element by index
+echo $fruits[1].'<br>';
+
+// Set element by index
+$fruits[0] = "Peach";
+
+// Append element
+$fruits[] = 'Peach';
+echo $fruits[3].'<br>';
+
+// Print the length of the array
+echo count($fruits).'<br>';
+
+// Add element at the end of the array
+array_push($fruits, 'Foo');
+// Remove element from the end of the array
+array_pop($fruits);
+
+echo '<pre>';
+var_dump($fruits);
+echo '</pre>';
+
+// Add element at the beginning of the array
+array_unshift($fruits, 'Apple');
+// Remove element from the beginning of the array
+array_shift($fruits);
+
+// Split the string into an array
+$string = "Banana,Apple,Peach";
+echo '<pre>';
+var_dump(explode(",", $string));
+echo '</pre>';
+
+print_r($fruits);
+
+// Combine array elements into string
+echo implode(",", $fruits).'<br>';
+
+// Check if element exist in the array
+echo '<pre>';
+var_dump(in_array('Apple', $fruits));
+echo '</pre>';
+
+// Search element index in the array
+echo '<pre>';
+var_dump(array_search("Peach", $fruits));
+echo '</pre>';
+
+// Merge two arrays
+$vegetables = ['Potato', 'Cucumber'];
+echo '<pre>';
+var_dump(array_merge($fruits, $vegetables));
+echo '</pre>';
+
+// Sorting of array (Reverse order also)
+sort($fruits); //sort, rsort, usort
+echo '<pre>';
+var_dump($fruits);
+echo '</pre>';
+
+// Filter, map, reduce of array
+$numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+$evens = array_filter($numbers, function($n){ // fn($n) => $n % 2 === 0
+    return $n % 2 === 0;
+});
+echo '<pre>';
+var_dump($evens);
+echo '</pre>';
+
+$squares = array_map(fn($n) => $n + 1, $numbers);
+echo '<pre>';
+var_dump($squares);
+echo '</pre>';
+
+$sum = array_reduce($numbers, fn($carry, $item) => $carry + $item);
+echo $sum.'<br>';
+
 // https://www.php.net/manual/en/ref.array.php
 
+// ============================================
+// Associative arrays
+// ============================================
 
-// Create simple array
-$fruits = ["Banana", "Orange", "Apple"];
-
-$isArray = is_array($fruits);
-
-var_dump(array_diff($fruits, ['Banana']));
-
-/*
-range(min, max)
-array_push, array_pop
-array_unshift, array_shift
-array_diff
-explode, implode
-array_merge
-array_search
-array_replace
-sort
-array_filter
-array_map
-array_reduce
-array_reverse
-*/
-// arrow functions
-
-// 1. Associative arrays
-// ==============================
-$names = [
-    'j' => 'John',
-    'b' => 'Brad',
-    'n' => 'Nick'
+// Create an associative array
+$person = [
+    'name' => 'Brad',
+    'surname' => 'Traversy',
+    'age' => 30,
+    'hobbies' => ['Tennis', 'Video Games'],
 ];
-echo $names['j'] . '<br/>';
-$names['m'] = 'Mary';
-echo $names['m'] . '<br/>';
+// Get element by key
+echo $person['name'].'<br>';
 
-var_dump(array_keys($names));
-var_dump(array_values($names));
-// ==============================
+// Set element by key
+$person['channel'] = 'TraversyMedia';
 
-// 2. Associative array with normal elements also
-// ==============================
-// ==============================
-$array1 = array("color" => "red", 2);
-var_dump($array1);
-// ==============================
-// ==============================
+// Print the keys of the array
+echo '<pre>';
+var_dump(array_keys($person));
+echo '</pre>';
 
-// array_merge
-// ==============================
-$array1 = array("color" => "red", 2);
-$array2 = array("color" => "green", "shape" => "trapezoid", 4);
-$result = array_merge($array1, $array2);
-var_dump($result);
+// Print the values of the array
+echo '<pre>';
+var_dump(array_values($person));
+echo '</pre>';
 
-// array_combine
-$a = array('green', 'red', 'yellow');
-$b = array('avocado', 'apple', 'banana');
-$c = array_combine($a, $b);
+// Sorting associative arrays by values, by keys
+ksort($person); // ksort, krsort, asort, arsort
+echo '<pre>';
+var_dump($person);
+echo '</pre>';
+
 
 // Two dimensional arrays
-$twoDimensionalArrays = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9],
-];
-
 $todoItems = [
     ['title' => 'Todo1', 'completed' => true],
     ['title' => 'Todo 2', 'completed' => false],
 ];
 
+echo '<pre>';
 var_dump($todoItems);
+echo '</pre>';
