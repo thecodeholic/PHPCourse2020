@@ -44,3 +44,8 @@ $name = false;
 // 7. Print type of the variable
 echo gettype($name) . '<br>';
 
+// 8. Variable checking functions
+is_string($name); // false
+is_int($age); // true
+is_bool($isMale); // true
+is_double($height); // true
