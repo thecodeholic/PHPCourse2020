@@ -32,7 +32,7 @@ echo str_pad($invoiceNumber, 8, '0', STR_PAD_LEFT) . '<br>' . PHP_EOL;
 echo str_pad($invoiceNumber2, 8, '0', STR_PAD_LEFT) . '<br>' . PHP_EOL;
 echo str_repeat('Hello', 2) . '<br>' . PHP_EOL;
 
-// Multiline text and line breaks
+// 6. Multiline text and line breaks
 $longText = "
   Hello, my name is Zura
   I am 27,
@@ -41,7 +41,7 @@ $longText = "
 echo $longText . '<br>' . PHP_EOL;
 echo nl2br($longText) . '<br>' . PHP_EOL;
 
-// Multiline text and reserve html tags
+// 7. Multiline text and reserve html tags
 $longText = "
   Hello, my name is <b>Zura</b>
   I am <b>27</b>,
