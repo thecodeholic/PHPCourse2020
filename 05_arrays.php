@@ -14,6 +14,11 @@ echo $fruits[1].'<br>';
 // Set element by index
 $fruits[0] = "Peach";
 
+// Check if array has element at index 2
+echo '<pre>';
+var_dump(isset($fruits[2]));  // Change age into 5
+echo '</pre>';
+
 // Append element
 $fruits[] = 'Peach';
 echo $fruits[3].'<br>';
@@ -60,6 +65,7 @@ echo '</pre>';
 $vegetables = ['Potato', 'Cucumber'];
 echo '<pre>';
 var_dump(array_merge($fruits, $vegetables));
+var_dump([...$fruits, ...$vegetables]); // Since PHP 7.4
 echo '</pre>';
 
 // Sorting of array (Reverse order also)
@@ -103,6 +109,11 @@ echo $person['name'].'<br>';
 
 // Set element by key
 $person['channel'] = 'TraversyMedia';
+
+// Check if array has specific key
+echo '<pre>';
+var_dump(isset($person['age']));  // Change age into "location"
+echo '</pre>';
 
 // Print the keys of the array
 echo '<pre>';
