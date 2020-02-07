@@ -3,29 +3,29 @@
 $age = 70;
 $salary = 300000;
 
-// if condition
-if ($age < 22) {       // if ($age < 22) echo 'You are young man!!<br>';
+// 1. if condition
+if ($age < 22) {       // 1.1 Without curly braces { }
     echo 'You are young man!!<br>';
 }
 
-// if condition - else
+// 2. if condition - else
 if ($age < 22) {
     echo 'You are young man!!<br>';
 } else {
     echo 'You are not young man!!<br>';
 }
 
-// if condition1 AND condition2
+// 3. if condition1 AND condition2
 if ($age < 22 && $salary > 500000) {
     echo 'You are young AND rich<br>';
 }
 
-// if condition1 OR condition2
+// 4. if condition1 OR condition2
 if ($age < 22 || $salary > 500000) {
     echo 'You are young OR rich<br>';
 }
 
-// if condition1 - elseif condition2 - else
+// 5. if condition1 - elseif condition2 - else
 if ($age < 22) {
     echo 'You are young man!!<br>';
 } elseif ($age > 60) {
@@ -33,7 +33,7 @@ if ($age < 22) {
 } else {
     echo "You are not young, but not old also<br>";
 }
-// if condition1 and condition2 - elseif condition1 and condition2 - else
+// 6. if condition1 and condition2 - elseif condition1 and condition2 - else
 if ($age < 22 && $salary >= 500000) {
     echo 'You are young man AND rich!!<br>';
 } elseif ($age < 22 && $salary < 500000) {
@@ -45,7 +45,7 @@ if ($age < 22 && $salary >= 500000) {
 }
 
 
-// switch
+// 7. switch
 $userRole = 'admin'; // admin, editor, user
 
 switch ($userRole) {
