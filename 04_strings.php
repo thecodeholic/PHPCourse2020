@@ -3,8 +3,11 @@
 // 1. Create simple string
 $string = "Hello TheCodeholic"; // 2. Extract TheCodeholic into variable
 $string2 = 'Hello TheCodeholic'; // 3. Replace TheCodeholic with variable
-echo $string.'<br>';
-echo $string2.'<br>';
+echo $string . '<br>';
+echo $string2 . '<br>';
+
+// String concatenation
+echo "Hello " . " World"; // Multiple concatenation . " and PHP";
 
 // 4. String functions
 $string = "    Hello World      ";
@@ -47,8 +50,8 @@ $longText = "
   I am <b>27</b>,
   I love my daughter
 ";
-echo "1 - " . $longText.'<br>';
-echo "2 - " . nl2br($longText).'<br>';
+echo "1 - " . $longText . '<br>';
+echo "2 - " . nl2br($longText) . '<br>';
 echo "3 - " . htmlentities($longText) . '<br>' . PHP_EOL;
 echo "4 - " . nl2br(htmlentities($longText)) . '<br>' . PHP_EOL;
 echo "5 - " . html_entity_decode(htmlentities($longText)) . '<br>' . PHP_EOL;
