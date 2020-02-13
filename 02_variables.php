@@ -21,7 +21,7 @@ $isMale = true; // 3. Change into false
 $height = 1.85;
 $salary = null;
 
-// 2. Print the variables
+// 2. Print the variables. Explain what is concatenation
 echo $name . '<br>';
 echo $age . '<br>';
 echo $isMale . '<br>';
