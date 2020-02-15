@@ -1,21 +1,21 @@
 <?php
 
-// 1. Declaring numbers
+// Declaring numbers
 
-// 2. Arithmetic operations
+// Arithmetic operations
 
-// 4. Assignment with math operators
+// Assignment with math operators
 
-// 5. Increment operator
+// Increment operator
 
-// 6. Decrement operator
+// Decrement operator
 
-// 7. Number checking functions
+// Number checking functions
 
-// 7. Conversion
+// Conversion
 
-// 9. Number functions
+// Number functions
 
-// 10. Formatting numbers
+// Formatting numbers
 
 // https://www.php.net/manual/en/ref.math.php

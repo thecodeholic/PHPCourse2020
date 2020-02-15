@@ -1,13 +1,13 @@
 <?php
 
-// 1. while
+// while
 
-// 2. Loop with $counter
+// Loop with $counter
 
-// 3. do - while
+// do - while
 
-// 4. for
+// for
 
-// 5. foreach
+// foreach
 
-// 6. Iterate Over associative array.
+// Iterate Over associative array.

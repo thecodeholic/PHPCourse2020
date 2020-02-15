@@ -1,16 +1,16 @@
 <?php
 
-// 1. Print current timestamp
+// Print current timestamp
 
-// 2. Print current date
+// Print current date
 
-// 3. Print yesterday
+// Print yesterday
 
-// 4. Different format: https://www.php.net/manual/en/function.date.php
+// Different format: https://www.php.net/manual/en/function.date.php
 
-// 5. String to timestamp
+// String to timestamp
 
-// 6. Parse date: https://www.php.net/manual/en/function.date-parse.php
+// Parse date: https://www.php.net/manual/en/function.date-parse.php
 
-// 7. Parse date from format
+// Parse date from format
 // https://www.php.net/manual/en/function.date-parse-from-format.php

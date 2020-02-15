@@ -4,22 +4,22 @@
 
 // Variable types
 
-// 1. Declare variables
+// Declare variables
 
-// 2. Print the variables. Explain what is concatenation
+// Print the variables. Explain what is concatenation
 
-// 4. Print types of the variables
+// Print types of the variables
 
-// 5. Print the whole variable
+// Print the whole variable
 
-// 6. Change the value of the variable
+// Change the value of the variable
 
-// 7. Print type of the variable
+// Print type of the variable
 
-// 8. Variable checking functions
+// Variable checking functions
 
-// 9. Check if variable is defined
+// Check if variable is defined
 
-// 10. Constants
+// Constants
 
-// 12. Using PHP built-in constants
+// Using PHP built-in constants
