@@ -6,6 +6,7 @@
 // Using cookies and session together, count how many times user accesses the page totally
 
 session_start();
+echo session_id();
 
 $_SESSION['page_count'] = $_SESSION['page_count'] ?? 0;
 $_SESSION['page_count']++;
