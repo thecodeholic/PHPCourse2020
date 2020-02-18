@@ -2,16 +2,14 @@
 /**
  * User: TheCodeholic
  * Date: 2/15/2020
- * Time: 9:00 AM
+ * Time: 5:49 PM
  */
 
 class Person {
-    // 3. Create properties
-    public $name;
-    protected $age;
-    private $salary;
+    public string $name;
+    public int $age;
+    private ?float $salary;
 
-    // 7. Create constructor
     public function __construct($name, $age, $salary)
     {
         $this->name = $name;
@@ -19,14 +17,13 @@ class Person {
         $this->salary = $salary;
     }
 
-    // 5. Create setter and getter for age
-    public function getAge()
+    public function getSalary()
     {
-        return $this->age;
+        return $this->salary;
     }
 
-    public function setAge($age): void
+    public function setSalary($salary)
     {
-        $this->age = $age;
+        $this->salary = $salary;
     }
 }
