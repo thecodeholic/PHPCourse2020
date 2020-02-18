@@ -10,12 +10,12 @@
 $errorMessage = '';
 // 3. Check if file was uploaded and save it locally
 if (isset($_FILES['file'])) {
-    // 4. Check if the file size is more than 5MB and show error
     // 7. Get the file extension
     $ext = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
     // 9. Convert $ext into lowercase
     $ext = strtolower($ext);
 
+    // 4. Check if the file size is more than 5MB and show error
     if ($_FILES['file']['size'] > 5 * 1024 * 2014) {
       $errorMessage = 'File size can not be more than 5MB';
       // 6. Display error message in HTML

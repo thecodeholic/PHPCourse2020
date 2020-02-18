@@ -52,14 +52,7 @@ function post_data($field)
         return false;
     }
     $data = $_POST[$field];
-    if (is_array($data)) {
-        $data = array_map(function ($d) {
-            return htmlspecialchars(stripslashes(trim($d)));
-        }, $data);
-    } else if (is_string($data)) {
-        $data = htmlspecialchars(stripslashes(trim($data)));
-    }
-    return $data;
+    return htmlspecialchars(stripslashes(trim($data)));
 }
 
 
