@@ -16,7 +16,7 @@
 </head>
 <body style="padding: 50px;">
 
-<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" novalidate>
+<form action="" method="post" novalidate>
     <div class="row">
         <div class="col">
             <div class="form-group">
