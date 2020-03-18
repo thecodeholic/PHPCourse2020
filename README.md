@@ -2,7 +2,7 @@
 
 ## Final version - *All code written during the video is there*
 
-### The repository is Created for Youtube Video "PHP for Absolute beginners - PHP Course 2020".
+### The repository is Created for Youtube Video ["PHP for Absolute beginners - PHP Course 2020"](https://youtu.be/yXzWfZ4N4xU).
 
 If you are interested to see empty files to following the tutorial you can download it [from here](https://github.com/thecodeholic/PHPCourse2020/tree/initial-version). 
 
