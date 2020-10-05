@@ -1,9 +1,9 @@
 <?php
 
-// 1. Function which prints "Hello I am TheCodeholic"
+// 1. Function which prints "Hello I am TraversyMedia"
 function hello()
 {
-    echo 'Hello I am TheCodeholic<br>';
+    echo 'Hello I am TraversyMedia<br>';
 }
 
 hello(); // 2

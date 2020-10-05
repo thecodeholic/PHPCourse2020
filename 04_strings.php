@@ -1,8 +1,8 @@
 <?php
 
 // 1. Create simple string
-$string = "Hello TheCodeholic"; // 2. Extract TheCodeholic into variable
-$string2 = 'Hello TheCodeholic'; // 3. Replace TheCodeholic with variable
+$string = "Hello TraversyMedia"; // 2. Extract TraversyMedia into variable
+$string2 = 'Hello TraversyMedia'; // 3. Replace TraversyMedia with variable
 echo $string . '<br>';
 echo $string2 . '<br>';
 
@@ -23,7 +23,7 @@ echo "8 - " . strtolower($string) . '<br>' . PHP_EOL;
 echo "9 - " . ucfirst('hello') . '<br>' . PHP_EOL;
 echo "10 - " . lcfirst('HELLO') . '<br>' . PHP_EOL;
 echo "11 - " . ucwords('hello world') . '<br>' . PHP_EOL;
-echo "12 - " . strpos($string, 'world') . '<br>' . PHP_EOL; // 5. Change into world
+echo "12 - " . strpos($string, 'world') . '<br>' . PHP_EOL; // 5. Change into World
 echo "13 - " . stripos($string, 'world') . '<br>' . PHP_EOL;
 echo "14 - " . substr($string, 8) . '<br>' . PHP_EOL;
 echo "15 - " . str_replace('World', 'PHP', $string) . '<br>' . PHP_EOL;
@@ -38,8 +38,8 @@ echo str_repeat('Hello', 2) . '<br>' . PHP_EOL;
 // 6. Multiline text and line breaks
 $longText = "
   Hello, my name is Zura
-  I am 27,
-  I love my daughter
+  I am 28,
+  I love my daughters
 ";
 echo $longText . '<br>' . PHP_EOL;
 echo nl2br($longText) . '<br>' . PHP_EOL;
@@ -47,8 +47,8 @@ echo nl2br($longText) . '<br>' . PHP_EOL;
 // 7. Multiline text and reserve html tags
 $longText = "
   Hello, my name is <b>Zura</b>
-  I am <b>27</b>,
-  I love my daughter
+  I am <b>28</b>,
+  I love my daughters
 ";
 echo "1 - " . $longText . '<br>';
 echo "2 - " . nl2br($longText) . '<br>';
