@@ -1,9 +1,4 @@
 <?php
-/**
- * User: TheCodeholic
- * Date: 2/15/2020
- * Time: 5:50 PM
- */
 
 require_once './Person.php';
 

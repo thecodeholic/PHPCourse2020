@@ -1,10 +1,3 @@
-<?php
-/**
- * User: TheCodeholic
- * Date: 2/10/2020
- * Time: 8:38 AM
- */
-?>
 <!doctype html>
 <html lang="en">
 <head>
