@@ -1,23 +1,21 @@
 <?php
 
-// using file_get_contents
-
-// Sample example to get data. Get response status code
-
-// set_opt_array
-
-//
-
-// Get users
 $url = 'https://jsonplaceholder.typicode.com/users';
-$resource = curl_init($url);
-// Or
-//curl_setopt($resource, CURLOPT_URL, $url);
-curl_setopt($resource, CURLOPT_RETURNTRANSFER, true);
-$result = curl_exec($resource);
-$responseCode = curl_getinfo($resource, CURLINFO_HTTP_CODE);
-//var_dump($responseCode);
-//var_dump(json_decode($result));
+// Sample example to get data.
+//$resource = curl_init($url);
+//curl_setopt($resource, CURLOPT_RETURNTRANSFER, true);
+//$usersJSON = curl_exec($resource);
+//echo $usersJSON;
+//curl_close($resource);
+//
+//// Get response status code
+//$responseCode = curl_getinfo($resource, CURLINFO_HTTP_CODE);
+//echo $responseCode;
+//exit;
+//// set_opt_array
+//curl_setopt_array($resource, [
+//    CURLOPT_RETURNTRANSFER => true
+//]);
 
 // Create User
 $user = [
