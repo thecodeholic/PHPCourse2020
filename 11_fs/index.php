@@ -24,6 +24,11 @@ echo $lorem;
 echo '<br>';
 file_put_contents('lorem.txt', "First line" . PHP_EOL . $lorem);
 
+// file_get_contents from URL
+$jsonContent = file_get_contents('https://jsonplaceholder.typicode.com/users');
+$users = json_decode($jsonContent);
+var_dump($users);
+
 // https://www.php.net/manual/en/book.filesystem.php
 // file_exists
 // is_dir
